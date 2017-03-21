@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+
+body {
+	padding:0px;
+	margin:0px;
+	background: #eeeeee url(images/bg.jpg) top left repeat;
+}
+
+#container {
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	width: 800px;
+	text-align: left;
+	font-family: Verdana, Arial;
+	font-weight: normal;
+	font-size: 12px;
+	color: #ffffff;
+	border-radius: 10px;
+	background-color: rgb(46,46,46);
+}
+
+#top-item {
+	margin-top: 0px;
+}
+
+#welcome-div {
+	float: left;
+
+}
+
+.welcome-text {
+	margin: 20px;
+	font-size: 20px;
+}
+
+#form-div {
+	float: right;
+	font-size: 14px;
+}
+
+#rc_form {
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+#rc_submit {
+	height: 45px;
+	width: 140px;
+	color: rgb(140,214,232);
+	display: inline-block;
+	position: relative;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px/25px Arial, sans-serif;
+	font-size: 20px;	
+	text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+	border-radius: 30px;
+	box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+	transition: all 0.15s ease;	
+	background-color: #70c9e3;
+}
+
+#rc_submit:disabled {
+	color: #515151;
+	background-color: #d3d3d3;
+}
+
+#prom {
+	clear:both;
+	font-size:16px;
+}
+
+#rc-items {
+	margin: auto;
+	padding: 0px;
+	width: 840px;
+	text-align: left;
+}
+
+#rollcalled {
+	margin-top: 10px;
+	margin-left: 0px;
+	padding: 10px;
+	width: 800px;
+	background-color: #a5cd4e;
+	border-radius: 20px;
+	font-family: Verdana, Arial;
+	font-weight: normal;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#failed {
+	margin-top: 10px;
+	margin-left: 0px;
+	padding: 10px;
+	width: 800px;
+	background-color: rgb(255,106,106);
+	border-radius: 20px;
+	font-family: Verdana, Arial;
+	font-weight: normal;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.class-date {
+	margin: 0px;
+}
+
+.state {
+	margin: 0px;
+	text-align: right;
+}

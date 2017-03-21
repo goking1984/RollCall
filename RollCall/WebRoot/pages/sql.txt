@@ -1,0 +1,17 @@
+create database student;
+
+use student
+
+create table stu_info (name char(20), sid char(10), primary key (sid));
+
+//查询数据库默认字符集
+show variables like '%char%';
+
+//下面2条语句放到一个事务中执行，rollcall.txt以GBK编码，完成后如果查询到乱码，重启workbench即可
+set names gbk;
+load data local infile 'D:/rollcall.txt' into table rollcall character set gbk;
+
+alter table rollcall add rc_time int default 0, rc_flag int default 0, rc_history char(10) default '1111000000';
+
+//遇到全表更新无法进行时，暂时关闭安全模式
+set sql_safe_updates=1;
